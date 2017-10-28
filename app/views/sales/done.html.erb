@@ -1,0 +1,25 @@
+<p> El registro fue almacenado con éxito </p>
+
+<table>
+  <tr>
+    <th> ID </th>
+    <th> DETALLE DE LA VENTA </th>
+    <th> COD </th>
+    <th> CATEGORÍA </th>
+    <th> VALOR </th>
+    <th> DESCUENTO </th>
+    <th> IVA </th>
+  </tr>
+
+  <tr>
+    <th> <%= @sale.id %> </th>
+    <th> <%= @sale.detail %> </th>
+    <th> <%= @sale.cod %> </th>
+    <th> <%= @sale.category %> </th>
+    <th> <%= @sale.value %> </th>
+    <th> <%= @sale.discount %> </th>
+    <th> <%= @sale.tax %></th>
+  </tr>
+</table>
+
+<%= link_to "Volver", sales_new_path %>
